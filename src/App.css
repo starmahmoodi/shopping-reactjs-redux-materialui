@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-brand .brand{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #103755;
+    font-weight: 700;
+} 
+
+.header-brand .brand .yellow-text{
+    color: #eeb808;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.category-nav-disable{
+    transform: translateX(100%)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.category-simple-nav{
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-left: 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.category-simple-nav:hover{
+    opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-category-link{
+    color: #103755;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+    font-weight: 400;
 }
+.nav-category-link:hover{
+    opacity: 0.8;
+}
+
+.modal-img{
+    width: 100%;
+    object-fit: cover;
+    min-height: 270px;
+}
+
+.cart-img{
+    height: 87%;
+    
+}
+
+@media only screen and (min-width: 570px) {
+    .header-brand .brand{
+        font-size: 24px;
+    } 
+
+    .modal-img{
+        width: 100%;
+        object-fit: cover;
+        min-height: 320px;
+    }
+
+    .cart-img{
+        height: 78%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .modal-img{
+        /* width: 100%; */
+        /* object-fit: cover; */
+        height: 70%;
+        /* min-height: 320px; */
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .header-brand .brand{
+        font-size: 30px;
+    } 
+    .category-simple-nav{
+        font-size: 15px;
+        margin-left: 22px;
+    
+    }
+}
+
